@@ -142,7 +142,7 @@ export default function RoundsPage() {
           Challenge Dashboard
         </h2>
         <p className="text-sm text-[#fff1d1]/70 max-w-xl mx-auto">
-          Complete each syllabus round sequentially. Earn speed bonuses to climb the leaderboard rank!
+          Complete each syllabus round sequentially. Each question carries 1 mark (15 marks per round).
         </p>
       </div>
 

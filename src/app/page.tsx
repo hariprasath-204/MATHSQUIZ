@@ -178,8 +178,8 @@ export default function LandingPage() {
 
         <div className="p-2.5 rounded-xl bg-[#240c0a]/60 border border-[#ff9100]/20">
           <Zap className="w-4 h-4 mx-auto text-[#ff9100] mb-1" />
-          <div className="text-xs font-bold text-[#fff1d1]">Speed Bonus</div>
-          <div className="text-[10px] text-[#ff9100]/80">10 Base + 1/sec bonus</div>
+          <div className="text-xs font-bold text-[#fff1d1]">1 Point / Question</div>
+          <div className="text-[10px] text-[#ff9100]/80">45 Total Marks</div>
         </div>
 
         <div className="p-2.5 rounded-xl bg-[#240c0a]/60 border border-[#df301c]/20">
