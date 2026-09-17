@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { QuizProvider } from "@/context/QuizContext";
 import { ParticleBackground } from "@/components/ParticleBackground";
@@ -19,6 +19,13 @@ export const metadata: Metadata = {
   ],
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: "#160706",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,10 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className="bg-[#0e0517] text-slate-100 min-h-screen flex flex-col relative selection:bg-rose-500/30 selection:text-rosegold-300 antialiased">
+      <body className="bg-[#160706] text-[#fff1d1] min-h-screen flex flex-col relative selection:bg-[#df301c]/30 selection:text-[#ff9100] antialiased overflow-x-hidden">
         <QuizProvider>
           <ParticleBackground />
-          <main className="flex-1 relative z-10 flex flex-col">{children}</main>
+          <main className="flex-1 relative z-10 flex flex-col w-full">{children}</main>
         </QuizProvider>
       </body>
     </html>
