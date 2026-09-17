@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     "ANJAC",
     "S. HARI PRASATH"
   ],
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export const viewport: Viewport = {
